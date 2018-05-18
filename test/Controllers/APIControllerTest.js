@@ -37,7 +37,7 @@ a **Response 404 is returned when** :
 
         controller.mdelete(webhookId, function callback(error, response, context) {
             // test response code
-            assert.equal(404, context.response.statusCode);
+            assert.equal(401, context.response.statusCode);
             assert.lengthOf(headers, context.response.headers.length);
             done();
         });
@@ -58,7 +58,7 @@ a **Response 400 is returned when** :
 
         controller.retrieve(page, pageSize, function callback(error, response, context) {
             // test response code
-            assert.equal(404, context.response.statusCode);
+            assert.equal(401, context.response.statusCode);
             assert.lengthOf(headers, context.response.headers.length);
             assert.isNotNull(response);
             assert.isTrue(TestHelper.isProperSubsetOf(context.response.body,     {    "page": 0,    "pageSize": 100,    "pageData": [{    "id": "6e2c61df-d30a-4555-82a5-0e79822d8f53",    "url": "http: //myurl.com",    "method": "POST",    "encoding": "FORM_ENCODED",    "headers": {    "Account": "FunGuys"    },    "template": "id=$mtId&status=$statusCode",    "events": [    "ENROUTE_DR",    "DELIVERED_DR"    ]    }, {    "id": "6e2c61df-d30a-4555-82a5-0e79822d8f53",    "url": "http: //myurl.com",    "method": "POST",    "encoding": "XML",    "headers": {    "Account": "FunGuys"    },    "template": "<content><id> $mtId < /id> <status > $statusCode < /status> </content>",    "events": [    "ENROUTE_DR",    "DELIVERED_DR"    ]    }]    }, true, true, false));
