@@ -1,6 +1,6 @@
 # MessageMedia Webhooks NodeJS SDK
 [![Travis Build Status](https://api.travis-ci.org/messagemedia/webhooks-nodejs-sdk.svg?branch=master)](https://travis-ci.org/messagemedia/webhooks-nodejs-sdk)
-[![npm](https://badge.fury.io/js/messagemedia-webhooks-sdk.svg)](https://www.npmjs.com/package/messagemedia-webhooks-sdk)
+[![npm version](https://badge.fury.io/js/messagemedia-webhooks-sdk.svg)](https://badge.fury.io/js/messagemedia-webhooks-sdk)
 
 The MessageMedia Webhooks allows you to subscribe to one or several events and when one of those events is triggered, an HTTP request is sent to the URL of your choice along with the message or payload.
 
