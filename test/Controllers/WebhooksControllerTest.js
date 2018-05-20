@@ -32,7 +32,6 @@ A webhook can be cancelled by appending the UUID of the webhook to the endpoint 
         controller.deleteWebhook(webhookId, function callback(error, response, context) {
             // test response code
             assert.equal(401, context.response.statusCode);
-            assert.lengthOf(headers, context.response.headers.length);
             done();
         });
     });
