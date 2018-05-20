@@ -25,16 +25,16 @@ describe("WebhooksController Tests", function tests() {
 A webhook can be cancelled by appending the UUID of the webhook to the endpoint and submitting a DELETE request to the /webhooks/messages endpoint.
 *Note: Only pre-created webhooks can be deleted. If an invalid or non existent webhook ID parameter is specified in the request, then a HTTP 404 Not Found response will be returned.*
      */
-    it("should testDeleteWebhook1 response", function testDeleteWebhook1Test(done) {
-        // parameters for the API call
-        let webhookId = "a7f11bb0-f299-4861-a5ca-9b29d04bc5ad";
-
-        controller.deleteWebhook(webhookId, function callback(error, response, context) {
-            // test response code
-            assert.equal(401, context.response.statusCode);
-            done();
-        });
-    });
+    // it("should testDeleteWebhook1 response", function testDeleteWebhook1Test(done) {
+    //     // parameters for the API call
+    //     let webhookId = "a7f11bb0-f299-4861-a5ca-9b29d04bc5ad";
+    //
+    //     controller.deleteWebhook(webhookId, function callback(error, response, context) {
+    //         // test response code
+    //         assert.equal(401, context.response.statusCode);
+    //         done();
+    //     });
+    // });
 
     /**
      * Update a webhook. You can update individual attributes or all of them by submitting a PATCH request to the /webhooks/messages endpoint (the same endpoint used above to delete a webhook)
