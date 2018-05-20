@@ -1,6 +1,4 @@
-/*
- * This file was automatically generated for MessageMedia by APIMATIC v2.0 ( https://apimatic.io )
- */
+
  'use strict';
 
 /**
