@@ -2,7 +2,7 @@
 [![Travis Build Status](https://api.travis-ci.org/messagemedia/webhooks-nodejs-sdk.svg?branch=master)](https://travis-ci.org/messagemedia/webhooks-nodejs-sdk)
 [![npm version](https://badge.fury.io/js/messagemedia-webhooks-sdk.svg)](https://badge.fury.io/js/messagemedia-webhooks-sdk)
 
-The MessageMedia Webhooks allows you to subscribe to one or several events and when one of those events is triggered, an HTTP request is sent to the URL of your choice along with the message or payload.
+The MessageMedia Webhooks allows you to subscribe to one or several events and when one of those events is triggered, an HTTP request is sent to the URL of your choice along with the message or payload. In simpler terms, it allows applications to "speak" to one another and get notified automatically when something new happens.
 
 ## ⭐️ Installing via NPM
 Now install messagemedia-messages-sdk via npm by using:
