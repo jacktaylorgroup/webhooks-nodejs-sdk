@@ -90,7 +90,7 @@ controller.updateWebhook(webhookId, body, function(error, response, context) {
 ### ❌ Delete a webhook
 You can get a webhook ID by looking at the `id` of each webhook created from the response of the retrieve webhooks example.
 ```javascript
-const sdk = require('messagemedia-webhooks-sdk');
+const lib = require('messagemedia-webhooks-sdk');
 // Configuration parameters and credentials
 lib.Configuration.basicAuthUserName = "API_KEY"; // The username to use with basic authentication
 lib.Configuration.basicAuthPassword = "API_SECRET"; // The password to use with basic authentication
