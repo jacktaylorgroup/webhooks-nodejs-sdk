@@ -27,7 +27,7 @@ A webhook can be cancelled by appending the UUID of the webhook to the endpoint 
      */
     it("should testDeleteWebhook1 response", function testDeleteWebhook1Test(done) {
         // parameters for the API call
-        let webhookId = a7f11bb0-f299-4861-a5ca-9b29d04bc5ad;
+        let webhookId = "a7f11bb0-f299-4861-a5ca-9b29d04bc5ad";
 
         controller.deleteWebhook(webhookId, function callback(error, response, context) {
             // test response code
@@ -57,7 +57,7 @@ A successful request to the retrieve webhook endpoint will return a response bod
      */
     it("should testUpdateWebhook1 response", function testUpdateWebhook1Test(done) {
         // parameters for the API call
-        let webhookId = a7f11bb0-f299-4861-a5ca-9b29d04bc5ad;
+        let webhookId = "a7f11bb0-f299-4861-a5ca-9b29d04bc5ad";
         let body = baseController.getObjectMapper().mapObject(    {        "url": "https://myurl.com",        "method": "POST",        "encoding": "FORM_ENCODED",        "events": [            "ENROUTE_DR"        ],        "template": "{\"id\": \"$mtId\", \"status\": \"$statusCode\"}"    }, 'UpdateWebhookRequest');
 
         controller.updateWebhook(webhookId, body, function callback(error, response, context) {
