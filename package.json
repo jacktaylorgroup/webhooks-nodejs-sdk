@@ -1,7 +1,7 @@
 {
   "name": "messagemedia-webhooks",
   "version": "1.4.0",
-  "description": "TODO: Add a description",
+  "description": "The MessageMedia Webhooks allows you to subscribe to one or several events and when one of those events is triggered, an HTTP request is sent to the URL of your choice along with the message or payload. In simpler terms, it allows applications to 'speak' to one another and get notified automatically when something new happens.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha --recursive"
